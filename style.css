@@ -4,4 +4,199 @@
     margin: 0px;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
-:root { --ink: #24372d; --green: #2c6e50; --dark: #174b38; --mint: #e8f3df; --cream: #f7f7ee; --line: #d6e1d1; --orange: #d77939; --white: #fff; }
+:root { 
+    --ink: #24372d; --green: #2c6e50; --dark: #174b38; --mint: #e8f3df; --cream: #f7f7ee; --line: #d6e1d1; --orange: #d77939; --white: #fff; --light-green: rgb(201, 243, 159); 
+}
+body {
+    background-color: var(--cream);
+}
+main {
+    max-width: 80%;
+    margin: auto;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 15px;
+}
+.nav1 {
+    display: flex;
+    justify-content: space-between;
+    padding: 15px;
+    font-weight: bold;
+    color: var(--ink);
+    width: 100%;
+    gap: 15px;
+}
+.nav1 ul {
+    display: flex;
+    gap: 20px;
+}
+nav li a {
+    text-decoration: none;
+    color: var(--ink);
+}
+.nav1 ul li:first-child a {
+    color: var(--white);
+    background-color: var(--dark);
+     padding: 7px;
+    border-radius: 15px;
+}
+.nav1 strong {
+    background-color: var(--light-green);
+    padding: 5px;
+    padding-left: 10px;
+    padding-right: 10px;
+    border-radius: 8px;
+}
+nav li {
+    list-style-type: none;
+}
+header {
+    display: flex;
+    gap: 10px;
+    padding: 40px;
+    background-color: var(--dark);
+    color: var(--white);
+    border-radius: 20px;
+    width: 100%;
+}
+.header1 h2 {
+    font-size: 12px;
+    color: var(--light-green);
+}
+.header-szovegdoboz h2 {
+    color: var(--light-green);
+    font-size: 28px;
+}
+.header-szovegdoboz {
+    border: 1px solid var(--light-green);
+    padding: 20px;
+    border-radius:25px ;
+    background: var(--green);
+}
+.nav2 ul {
+    display: flex;
+    justify-content: space-around;
+    gap: 10px;
+    justify-content: center;
+}
+.nav2 {
+    padding: 13px;
+    font-weight: bold;
+    width: 100%;
+}
+.nav2 ul li:first-child {
+    background-color: var(--light-green);
+}
+.nav2 ul li{
+    padding: 5px;
+    background-color: var(--mint);
+    flex: 1 0 auto;
+    text-align: center;
+    border-radius:5px ;
+}
+article {
+    flex: 3;
+    background-color: var(--white);
+    border: 2px solid var(--mint);
+    border-radius: 8px;
+    padding: 15px;
+}
+aside {
+   flex: 1;
+    margin-left: 20px;
+    background-color: var(--mint);
+    padding: 20px;
+    border-radius: 8px;
+    height: fit-content;
+}
+.legelo {
+    display: flex;
+    flex-direction: column;
+    padding: 10px;
+}
+.felso-sor {
+    display: flex;
+    justify-content:space-around;
+    align-items: center;
+    background-color: var(--cream);
+    padding: 40px;
+    border-top-right-radius:9px ;
+    border-top-left-radius:9px ;
+}
+.also-sor img {
+    width: 40px;
+}
+.felso-sor img {
+    width: 40px;
+}
+.also-sor {
+    display: flex;
+    justify-content:center;
+    padding: 10px;
+    background-color: var(--green);
+    flex: 1 0 auto;
+    padding: 40px;
+    border-bottom-left-radius:9px ;
+    border-bottom-right-radius:9px ;
+}
+.as-szovegdoboz {
+    display: flex;
+    flex-direction: column;
+    gap:10px;
+    padding: 10px;
+}
+.as-szoveg {
+    background-color: var(--white);
+    padding: 15px;
+    border-radius: 8px;
+    border-left: var(--green) 3px solid;
+}
+.szovegdoboz {
+    display: flex;
+    gap:10px;
+    flex-wrap: wrap;
+    flex-direction:row;
+    margin-top:10px ;
+}
+.szoveg1 {
+    flex: 1 0 calc(33% - 10px);
+    background-color: var(--mint);
+    padding: 10px;
+    border-radius:8px ;
+}
+.szoveg2 {
+    flex: 0 0 100%;
+    background-color: var(--mint);
+    padding: 10px;
+    border-radius: 8px;
+}
+footer {
+    width: 100%;
+    display: flex;
+    justify-content: space-between ;
+    align-items: center;
+}
+.szoveg1 h2 {
+    color: var(--dark)
+}
+.Mi-tortenik {
+    background-color: var(--dark);
+    color: var(--white);
+    padding: 12px 18px;
+    border-radius: 8px;
+    font-weight: bold;
+}
+footer p{
+    margin-bottom: 60px;
+}
+.block1 {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 10px;
+    gap: 10px;
+}
+fieldset {
+    border: 1px solid var(--green);
+    border-radius: 8px;
+}
